@@ -23,7 +23,7 @@
 
     <!--FOOTER-->
 
-    <footer class="page-footer font-small stylish-color-dark pt-4">
+    <footer class="page-footer font-small mt-5 stylish-color-dark pt-4">
 
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
@@ -126,7 +126,7 @@
         <!-- Footer Links -->
 
         <hr>
-
+        @guest
         <!-- Call to action -->
         <ul class="list-unstyled list-inline text-center py-2">
             <li class="list-inline-item">
@@ -137,7 +137,7 @@
             </li>
         </ul>
         <!-- Call to action -->
-
+        @endguest
         <hr>
 
         <!-- Social buttons -->
@@ -172,7 +172,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+            <a href="https://github.com/yehia67"> Yehia Tarek</a>
         </div>
         <!-- Copyright -->
 

@@ -15,7 +15,8 @@
 Route::get('/', 'PagesController@index')->name('pageIndex');
 Route::get('about', 'PagesController@about')->name('pageAbout');
 Route::get('contact', 'PagesController@contact')->name('pageContact');
-
+Route::get('output', 'PagesController@output')->name('pageOutput');
+Route::get('outputAr', 'PagesController@outputAr')->name('pageOutputAr');
 // Authentication Scaffolding
 Auth::routes();
 

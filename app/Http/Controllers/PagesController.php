@@ -2,19 +2,30 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PagesController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('pages.index');
     }
 
-    public function about(){
+    public function about()
+    {
         return view('pages.about');
     }
 
-    public function contact(){
+    public function contact()
+    {
         return view('pages.contact');
+    }
+
+    public function output()
+    {
+        return view('pages.output');
+    }
+
+    public function outputAr()
+    {
+        return view('pages.outputAr');
     }
 }
