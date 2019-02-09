@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title') | Request product </title>
+    <title>@yield('title') | Owned products </title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     @stack('styles')
     @stack('scripts')
 </head>
@@ -23,161 +24,116 @@
 
     <!--FOOTER-->
 
-    <footer class="page-footer font-small mt-5 stylish-color-dark pt-4">
+ <!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5 mt-3">
 
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
 
-            <!-- Grid row -->
-            <div class="row">
+<!--Registrate-->
+@guest
+<ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-primary btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+@endguest
 
-                <!-- Grid column -->
-                <div class="col-md-4 mx-auto">
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-5">
 
-                    <!-- Content -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <!-- Grid row -->
+  <div class="row mt-3 dark-grey-text">
 
-                </div>
-                <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
-                <hr class="clearfix w-100 d-md-none">
+      <!-- Content -->
+      <h6 class="text-uppercase font-weight-bold">Start-up Platform</h6>
+      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>A new Startup help your bussiness to grow up by software solutions.</p>
 
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
+    </div>
+    <!-- Grid column -->
 
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Packages</h6>
+      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <a class="dark-grey-text" href="#!">eCommerce</a>
+      </p>
+      <p>
+        <a class="dark-grey-text" href="#!">ERP</a>
+      </p>
+      <p>
+        <a class="dark-grey-text" href="#!">Front-end Pages Generator</a>
+      </p>
+      <p>
+        <a class="dark-grey-text" href="#!">Manamgement Systems</a>
+      </p>
 
-                </div>
-                <!-- Grid column -->
+    </div>
+    <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <a class="dark-grey-text" href="#!">Your Account</a>
+      </p>
+      <p>
+        <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+      </p>
+      <p>
+        <a class="dark-grey-text" href="#!">Shipping Rates</a>
+      </p>
+      <p>
+        <a class="dark-grey-text" href="#!">Help</a>
+      </p>
 
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+    </div>
+    <!-- Grid column -->
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
-                </div>
-                <!-- Grid column -->
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <i class="fas fa-home mr-3"></i> Cairo, EGYPT, EGP</p>
+      <p>
+        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+      <p>
+        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+      <p>
+        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
 
-                <hr class="clearfix w-100 d-md-none">
+    </div>
+    <!-- Grid column -->
 
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
+  </div>
+  <!-- Grid row -->
 
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+</div>
+<!-- Footer Links -->
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
+<!-- Copyright -->
+<div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
+  <a class="dark-grey-text" href="https://github.com/yehia67"> Yehia Tarek</a>
+</div>
+<!-- Copyright -->
 
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
-        <hr>
-        @guest
-        <!-- Call to action -->
-        <ul class="list-unstyled list-inline text-center py-2">
-            <li class="list-inline-item">
-                <h5 class="mb-1">Register for free</h5>
-            </li>
-            <li class="list-inline-item">
-                <a href="http://127.0.0.1:8000/register" class="btn btn-danger btn-rounded">Sign up!</a>
-            </li>
-        </ul>
-        <!-- Call to action -->
-        @endguest
-        <hr>
-
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1">
-                    <i class="fa fa-facebook"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1">
-                    <i class="fa fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                    <i class="fa fa-google-plus"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1">
-                    <i class="fa fa-linkedin"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-dribbble mx-1">
-                    <i class="fa fa-dribbble"> </i>
-                </a>
-            </li>
-        </ul>
-        <!-- Social buttons -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://github.com/yehia67"> Yehia Tarek</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-
+</footer>
+<!-- Footer -->
     <!--/FOOTER-->
 
 </body>
