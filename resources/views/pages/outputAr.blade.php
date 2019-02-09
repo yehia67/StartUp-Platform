@@ -25,7 +25,9 @@ a:hover {
     -webkit-transition: 0.5ms all;
     transition: 0.5ms all
 }
-
+.prev-lang{
+    display: inline-flex;
+}
 .lang {
     text-decoration: underline !important;
     cursor: pointer;
@@ -386,7 +388,9 @@ footer ul.quicklinks {
             <!-- /NAV-ITEMS -->
         </ul>
         <div class="lang fixed-top">
-            <a class="nav-link" href="http://127.0.0.1:8000/output">English </a>
+        <ul class="prev-lang">
+             <a class="nav-link" href="http://127.0.0.1:8000/output">English </a> | <a class="nav-link" href="http://127.0.0.1:8000"> العودة الي الصفحه الرئيسيه    </a></a>
+             </ul>
         </div>
         <!--/NAVBAR-->
         <!--HOME-->
